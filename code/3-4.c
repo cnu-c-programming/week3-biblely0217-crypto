@@ -5,7 +5,7 @@ int max_of(int count, ...) {
     va_list ap;
     va_start(ap, count);
 
-    int max = va_arg(ap, int);  // 첫 번째 값
+    int max = va_arg(ap, int);  
 
     for (int i = 1; i < count; i++) {
         int val = va_arg(ap, int);
